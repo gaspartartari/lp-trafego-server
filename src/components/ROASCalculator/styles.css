@@ -1,0 +1,69 @@
+.roas-calculator {
+    margin: 40px 30px;
+    padding: 20px;
+    border: 1px solid var(--border-primary-color);
+    border-radius: 8px;
+    background-color: var(--bg-secondary-color);
+}
+
+
+
+.roas-calculator h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-secondary-color);
+}
+
+.roas-calculator p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-secondary-color);}
+
+.roas-calculator p span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.roas-calculator p span strong {
+    font-weight: bold;
+    color: var(--btn-primary-color);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-secondary-color);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--border-form-input-color);
+    border-radius: 4px;
+}
+
+.lp-roas-calculator-button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--btn-primary-color);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result h3 {
+    color: #333;
+}

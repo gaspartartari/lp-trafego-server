@@ -1,0 +1,56 @@
+#problems {
+  background: var(--bg-secondary-color);
+}
+
+.lp-sbtn-display-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.lp-hero {
+  box-shadow: inset 0 0 200px rgba(0,0,0,0.4);
+  
+}
+
+
+
+@media (min-width: 920px) {
+  .lp-flex-control {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 120px
+  }
+
+  .lp-sbtn-display-control {
+    display: none;
+  }
+
+  .lp-video {
+    display:none;
+    
+    
+  }
+
+  .lp-hero {
+    background-size: cover; /* ou 'contain', dependendo de como você quer que a imagem se ajuste */
+    background-position:  center; /* move a imagem um pouco para a esquerda */
+    background-repeat: no-repeat; /* evita a repetição da imagem */
+    padding-top: 0px;
+    padding-bottom: 40px;
+    box-shadow: inset 0 0 200px rgba(0,0,0,0.4);
+
+  }
+}
+
+@media (min-width: 1000px) {
+
+  .lp-hero {
+    background-size: cover; /* ou 'contain', dependendo de como você quer que a imagem se ajuste */
+    background-position:   center; /* move a imagem um pouco para a esquerda */
+    background-repeat: no-repeat; /* evita a repetição da imagem */
+
+  }
+}
+

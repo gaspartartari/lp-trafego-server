@@ -1,0 +1,133 @@
+.lp-about-us {
+    padding: 50px 20px;
+    background-color: var(--bg-secondary-color);
+    text-align: center;
+    color: var(--text-secondary-color);
+  }
+  
+  .lp-about-us h2 {
+
+    color: var(--text-secondary-color);
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+    
+  .lp-about-us p {
+    color: var(--text-secondary-color);
+    margin-bottom: 30px;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .lp-about-us span {
+    font-weight: 700;
+  }
+  
+  .lp-about-us-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .lp-partner-card {
+    background: var(--bg-tertiary-color);
+    border: 1px solid var(--border-primary-color);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+  }
+  
+  .lp-partner-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .lp-partner-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid var(--bg-primary-color);
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .lp-partner-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color:  var(--bg-primary-color);
+  }
+  
+  .lp-partner-card p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  
+  .lp-partner-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0077B5;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .lp-partner-card a:hover {
+    color: #005582;
+  }
+  
+  @media (min-width: 768px) {
+    .lp-about-us h2 {
+      font-size: 32px;
+    }
+  
+    .lp-partner-card h3 {
+      font-size: 22px;
+    }
+  
+    .lp-partner-card p {
+      font-size: 18px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+
+    .lp-about-us-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      height: auto;
+    }
+
+    
+    .lp-about-us h2 {
+      font-size: 2rem;
+    }
+  
+    .lp-partner-card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .lp-partner-card p {
+      font-size: 1rem;
+    }
+
+    .lp-partner-card img {
+      width: 130px;
+      height: 130px;
+
+    }
+  }
+  

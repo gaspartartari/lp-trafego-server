@@ -1,0 +1,68 @@
+
+.lp-roascard-main-text {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: var(--bg-primary-color);
+    color: var( --text-primary-color);
+  
+  }
+  
+  .lp-roascard-main-text h1, .lp-roascard-main-text h2 {
+    margin: 0;
+    padding: 20px 20px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .lp-roascard-main-text h1 {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  
+  .lp-roascard-main-text h1:hover {
+    color: var(--primary-color);
+    transform: scale(1.05);
+  }
+  
+  .lp-roascard-main-text h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  .lp-roascard-main-text h2:hover {
+    color: var(--secondary-color);
+    transform: scale(1.05) rotate(2deg);
+  }
+  
+  .lp-roascard-second-text p{
+    font-size: 1.2rem;
+    margin: 20px;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px 30px;
+    background-color:  var(  --html-body-background);
+    color: var( --bg-primary-color);
+  }
+
+  
+  @media (max-width: 768px) {
+    .lp-roascard-main-text h1 {
+      font-size: 2.5rem;
+    }
+  
+    .lp-roascard-main-text h2 {
+      font-size: 2rem;
+    }
+  
+    .lp-roascard-main-text p {
+      font-size: 1.5rem;
+    }
+  
+  
+  }
+  
+  
+  

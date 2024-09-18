@@ -1,0 +1,29 @@
+.lp-schedule-button-container-bg{
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0;
+}
+
+
+.lp-schedule-button-container-bg a {
+    background-color : var(--btn-primary-color) ;
+    color: white;
+    height: 60px;
+    width: 100%;
+    max-width: 430px;
+
+}
+
+@media (max-width: 470px) {
+    .lp-schedule-button-container-bg a {
+        max-width: 250px;
+    
+    }
+}
+
+
+
+
+

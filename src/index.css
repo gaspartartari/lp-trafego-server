@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+:root {
+  --bg-primary-color: #5B75BF;
+  --bg-secondary-color: #f9f9f9;
+  --bg-tertiary-color: #ffffff;
+  --bg-quartiaty-color: #f5f5f5;
+
+  --text-primary-color: #ffffff;
+  --text-secondary-color: #555555;
+
+  --btn-primary-color: #F2733C;
+
+  --border-primary-color:#ddd;
+  --border-form-input-color: #ccc;
+
+  --html-body-background: linear-gradient(135deg, #ffffff, #f0f4f8);
+  --html-body-background-test: #ffffff;
+  
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Jost", sans-serif;
+  font-kerning: none;
+
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+html,
+body {
+  background: var(--html-body-background);
+}
+/*-----------------------------------------------------------------*/
+/* generic styles */
+
+.lp-container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  
+}
+
+.lp-mb20 {
+  margin-bottom: 20px;
+}
+
+.lp-mt20 {
+  margin-top: 20px;
+}
+
+.lp-flex {
+  display: flex;
+}
+
+
+
+
+/* Animações */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lp-services, .lp-clients {
+  animation: fadeIn 5s ease-in-out;
+}
+
+.lp-service-card, .lp-client-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.lp-service-card.visible, .lp-client-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.lp-section {
+  padding: 100px 20px;
+}
+
+.lp-header-nav-links a {
+  cursor: pointer;
+}
+
+
+/* Buttons */
+.lp-schedule-button{
+  display: flex;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 8px;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 20px 40px;
+  color: var(--text-primary-color);
+
+
+}
+
+.lp-schedule-button:hover {
+  background-color: var(--btn-primary-color);
+  transform: scale(1.05);
+  color: var(--text-primary-color);
+}
+
+.lp-schedule-button:active {
+  transform: scale(0.95);
+}
+
+@media (min-width: 768px) {
+
+  .lp-schedule-button {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .lp-schedule-button {
+    font-size: 22px;
+  }
+}
+
+
+

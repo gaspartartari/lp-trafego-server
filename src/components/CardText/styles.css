@@ -1,0 +1,128 @@
+.lp-main-text {
+  text-align: center;
+  padding: 45px 20px;
+  color: var(--text-primary-color);
+}
+
+.lp-main-text h1,
+.lp-main-text h2 {
+  margin: 0;
+  padding: 20px 20px;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.lp-main-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(
+    to right,
+    var(--text-primary-color) 30%,
+    rgba(255, 255, 255, 0.5) 50%,
+    var(--text-primary-color) 70%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: wave 5s linear infinite;
+  background-size: 200% 100%;
+}
+
+.lp-main-text h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+
+
+.lp-main-text p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+
+}
+
+.lp-main-text-sbtn-container {
+  display: none;
+}
+
+
+@keyframes wave {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@media (min-width: 920px) {
+
+  .lp-main-text {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    text-align: left;
+    padding: 0px;
+
+  }
+
+  .lp-main-text h1 {
+    font-size: 2rem;
+    padding: 10px 10px;
+  }
+
+  .lp-main-text h2 {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+  }
+
+  .lp-main-text p {
+    font-size: 1rem;
+    padding-right: 60px;
+    padding-left: 10px;
+   
+  }
+
+  .lp-main-text-sbtn-container {
+    display: flex;
+    padding: 10px;
+  }
+
+  .lp-main-text-sbtn {
+    background: linear-gradient(45deg, #F2733C, #F2733C, #F2733C, #F2733C, #F2733C, #F2733C, #F2733C, #F2733C, #F2733C);
+    background-size: 1800%;
+    color: var(--text-primary-color);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-position 0.8s;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .lp-main-text-sbtn:hover {
+    animation: gradient 5s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+
+  }
+
+}
+

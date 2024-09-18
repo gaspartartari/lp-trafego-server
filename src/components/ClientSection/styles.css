@@ -1,0 +1,111 @@
+.lp-clients {
+  padding: 50px 0;
+  background-color: var(--bg-tertiary-color);
+  text-align: center;
+}
+
+.lp-clients h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--text-secondary-color);
+  padding: 0 20px;
+}
+
+.lp-clients-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: flex-start;
+  overflow-x: auto;
+  padding: 20px 25px;
+}
+
+/* Existing Mobile Styles */
+.lp-client-card {
+  background: white;
+  border: 1px solid var(--border-primary-color);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  min-width: 80%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.lp-client-card:hover {
+  transform: translateY(-10px);
+}
+
+.lp-client-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.lp-client-card p {
+  color: var(--text-secondary-color);
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.lp-client-card blockquote {
+  color: #666;
+  font-style: italic;
+  font-size: 14px;
+  margin: 10px 0 0;
+}
+
+/* Desktop Enhancements */
+@media (min-width: 800px) {
+
+  .lp-clients h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    letter-spacing: 1.5px;
+  }
+
+  .lp-clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+
+  }
+
+  .lp-client-card {
+    background: linear-gradient(135deg, var(--bg-tertiary-color) 0%, var(--bg-tertiary-color) 100%);
+    border: 1px solid var(--border-primary-color);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 25%;
+    transition: transform 0.4s, box-shadow 0.4s;
+    color: var(--text-primary-color);
+    overflow: hidden;
+  }
+
+  .lp-client-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  .lp-client-card img {
+    max-height: 300px;
+    transition: transform 0.4s;
+  }
+
+  .lp-client-card:hover img {
+    transform: scale(1.05);
+  }
+
+  .lp-client-card p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .lp-client-card blockquote {
+    font-size: 16px;
+  }
+}

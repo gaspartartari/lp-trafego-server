@@ -1,0 +1,43 @@
+.lp-about {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    color: #333;
+  }
+  
+  .lp-about h2 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 0 20px;
+  }
+  
+  .lp-about p {
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .lp-about h2 {
+      font-size: 32px;
+    }
+  
+    .lp-about p {
+      font-size: 20px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .lp-about h2 {
+      font-size: 36px;
+    }
+  
+    .lp-about p {
+      font-size: 22px;
+    }
+  }
+  

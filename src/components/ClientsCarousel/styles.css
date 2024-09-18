@@ -1,0 +1,28 @@
+/* styles.css */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    padding: 20px 0;
+}
+
+.carousel-item {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (min-width: 1024px) {
+    .carousel-container {
+        width: 100%;
+        overflow: hidden;
+        background-color: white;
+        padding: 0 0;
+    }
+}
