@@ -10,9 +10,14 @@ interface WhatsAppButtonProps {
     message: string;
 }
 
-const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({ number, text, message }) => {
-    const link = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
+const whatsappText = 'Olá! Gostaria de mais informações sobre a InPulso.';
+
+
+export default function WhatsAppButton ()  {
+    const link = `https://wa.me/5551993415860?text=${encodeURIComponent(whatsappText)}`;
+    
     return (
+       <>
        <div className='lp-container'>
          <div className='lp-whatsapp-button-container'>
             <a 
@@ -25,16 +30,15 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({ number, text, message }
                 (window as any).dataLayer.push({ 'event': 'whatsapp_button' });
             }}
             >
-                {text}
+                FALE CONOSCO
                 <FontAwesomeIcon icon={faWhatsapp} className='lp-whatsapp-icon' />
                 
             </a>
 
 
         </div>
-       </div>
-    );
-};
+       </div></>
+    )
+}
 
-export default WhatsAppButton;
 

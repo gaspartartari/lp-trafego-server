@@ -1,14 +1,14 @@
 
 import Slider from 'react-slick';
 import './styles.css';
-import client1 from '../../assets/logos-clientes/1.jpg';
-import client2 from '../../assets/logos-clientes/2.jpg';
-import client3 from '../../assets/logos-clientes/3.jpg';
-import client4 from '../../assets/logos-clientes/4.jpg';
-import client5 from '../../assets/logos-clientes/5.jpg';
-import client6 from '../../assets/logos-clientes/6.jpg';
-import client7 from '../../assets/logos-clientes/7.jpg';
-import client8 from '../../assets/logos-clientes/8.jpg';
+import client1 from '../../assets/logos-clientes/singa.jpg';
+import client2 from '../../assets/logos-clientes/soleah.jpg';
+import client3 from '../../assets/logos-clientes/adapabio.jpg';
+import client4 from '../../assets/logos-clientes/missli.jpg';
+import client5 from '../../assets/logos-clientes/mcjoias.jpg';
+import client6 from '../../assets/logos-clientes/noda.jpg';
+import client7 from '../../assets/logos-clientes/euliricas.jpg';
+import client8 from '../../assets/logos-clientes/manfrim.jpg';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from 'react';

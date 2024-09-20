@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import './styles.css';
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
-import './styles.css';
+import LogoInPulso from '../../assets/logo.png';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +33,9 @@ export default function Header() {
         <header className='lp-header'>
             <nav className='lp-container'>
                 <div className='lp-header-nav-logo'>
-                    <NavLink to={'/home'} >InPulso </NavLink>
+                    <NavLink to={'/home'} >
+                        <img src={LogoInPulso} alt="logo InPulso" />
+                    </NavLink>
                 </div>
                 <div className={`lp-header-nav-links ${isOpen ? 'open' : ''}`}>
                     <a href="#home" onClick={(e) => handleLinkClick(e, 'home')}>Início</a>

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useLocation, Routes, Route, Navigate } from "react-router-dom";
-import Home from "../pages/Home";
+import { Home } from "../pages/Home";
 import ROASPage from "../pages/ROASPage";
 
 

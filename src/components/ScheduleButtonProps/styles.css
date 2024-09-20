@@ -4,10 +4,13 @@
     align-items: center;
     display: flex;
     margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent; /* Add this */
 }
 
 
-.lp-schedule-button-container-bg a {
+.lp-schedule-button {
     background-color : var(--btn-primary-color) ;
     color: white;
     height: 60px;

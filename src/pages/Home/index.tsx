@@ -18,7 +18,8 @@ import VideoPlayer from '../../components/VideoPlayerProps';
 import videoMarketing from '../../assets/videoMarketing.mp4';
 
 
-export default function Home() {
+
+export function Home() {
 
   useEffect(() => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -62,7 +63,7 @@ export default function Home() {
       <section id="clients">
         <ClientsSection />
       </section>
-      <WhatsAppButton number={'5551993415860'} text={'Chame no WhatsApp'} message={'Olá, gostaria de agendar uma consulta'} />
+      <WhatsAppButton/>
 
       <section id="testimonials">
         <Testimonials />

@@ -7,10 +7,9 @@
  
 }
 
-.lp-header-nav-logo {
-  font-size: 2rem;
-  font-weight: 1000;
-  color: var(--text-primary-color);
+.lp-header-nav-logo img {
+  height: 35px;
+  max-width: 150px;
 }
 
 .lp-header img {
@@ -66,7 +65,11 @@ nav {
   font-size: 24px;
   color: var(--text-primary-color);
   cursor: pointer;
+  
 }
+
+
+
 
 
 @media (max-width: 768px) {

@@ -13,44 +13,67 @@
 
 .lp-clients-grid {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap; /* Keeps it a horizontal carousel */
   gap: 20px;
   justify-content: flex-start;
-  overflow-x: auto;
+  overflow-x: auto; /* Enables horizontal scrolling */
   padding: 20px 25px;
 }
 
-/* Existing Mobile Styles */
 .lp-client-card {
   background: white;
   border: 1px solid var(--border-primary-color);
   border-radius: 8px;
   padding: 20px;
   text-align: center;
-  min-width: 80%; 
+  min-width: 80%; /* This ensures that each card has a width suitable for mobile screens */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
 
 .lp-client-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px); /* Keep the card shadow effect when hovered */
 }
 
-.lp-client-card img {
+.client-image-container {
+  position: relative;
+  overflow: hidden; /* Keeps the image scaling effect inside the boundaries */
+  
+}
+
+.client-image {
+  display: flex;
   width: 100%;
-  height: 400px;
-  object-fit: cover;
+  height
   border-radius: 4px;
-  margin-bottom: 10px;
+  transition: transform 0.4s ease; /* Smooth scaling on hover */
+  
 }
 
-.lp-client-card p {
-  color: var(--text-secondary-color);
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 10px;
+/* Dark overlay and centered name */
+.client-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.4s ease;
+  border-radius: 4px;
 }
 
+
+.client-name {
+  color: var(--text-primary-color);
+  font-size: 1rem;
+  font-weight: bold;
+  background: transparent;
+}
+
+/* Blockquote and other text styles */
 .lp-client-card blockquote {
   color: #666;
   font-style: italic;
@@ -58,51 +81,20 @@
   margin: 10px 0 0;
 }
 
+/* Hover effect for image scaling */
+.lp-client-card:hover img {
+  transform: scale(1.05); /* Slight scale on hover */
+  transition: transform 0.4s ease;
+}
+
 /* Desktop Enhancements */
 @media (min-width: 800px) {
-
-  .lp-clients h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    letter-spacing: 1.5px;
-  }
-
-  .lp-clients-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-
-  }
-
   .lp-client-card {
-    background: linear-gradient(135deg, var(--bg-tertiary-color) 0%, var(--bg-tertiary-color) 100%);
-    border: 1px solid var(--border-primary-color);
-    border-radius: 12px;
-    padding: 30px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    min-width: 25%;
-    transition: transform 0.4s, box-shadow 0.4s;
-    color: var(--text-primary-color);
-    overflow: hidden;
-  }
-
-  .lp-client-card:hover {
-    transform: translateY(-12px) scale(1.02);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    min-width: 25%; /* Show more cards on larger screens */
   }
 
   .lp-client-card img {
     max-height: 300px;
-    transition: transform 0.4s;
-  }
-
-  .lp-client-card:hover img {
-    transform: scale(1.05);
-  }
-
-  .lp-client-card p {
-    font-size: 18px;
-    font-weight: 600;
   }
 
   .lp-client-card blockquote {
