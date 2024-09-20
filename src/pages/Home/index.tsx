@@ -63,8 +63,9 @@ export function Home() {
       <section id="clients">
         <ClientsSection />
       </section>
-      <WhatsAppButton/>
-
+      <section id='whatsapp'>
+        <WhatsAppButton />
+      </section>
       <section id="testimonials">
         <Testimonials />
       </section>
