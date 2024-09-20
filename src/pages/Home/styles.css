@@ -20,7 +20,7 @@
   padding: 0;
   border: none;
   background-color: transparent; /* Add this */
-
+  
 }
 
 
@@ -59,6 +59,17 @@
     background-size: cover; /* ou 'contain', dependendo de como você quer que a imagem se ajuste */
     background-position:   center; /* move a imagem um pouco para a esquerda */
     background-repeat: no-repeat; /* evita a repetição da imagem */
+
+  }
+}
+
+@media (min-width: 1500px) {
+
+  .lp-hero {
+    background-size: cover; /* ou 'contain', dependendo de como você quer que a imagem se ajuste */
+    background-position:  center; /* move a imagem um pouco para a esquerda */
+    background-repeat: no-repeat; /* evita a repetição da imagem */
+
 
   }
 }

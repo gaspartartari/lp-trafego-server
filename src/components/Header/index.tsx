@@ -38,13 +38,11 @@ export default function Header() {
                     </NavLink>
                 </div>
                 <div className={`lp-header-nav-links ${isOpen ? 'open' : ''}`}>
-                    <a href="#home" onClick={(e) => handleLinkClick(e, 'home')}>Início</a>
                     <a href="#services" onClick={(e) => handleLinkClick(e, 'services')}>Serviços</a>
                     <a href="#about-us" onClick={(e) => handleLinkClick(e, 'about-us')}>Sobre Nós</a>
                     <a href="#clients" onClick={(e) => handleLinkClick(e, 'clients')}>Cases</a>
                     <a href="#faqs" onClick={(e) => handleLinkClick(e, 'faqs')}>FAQs</a>
                     <a href="#testimonials" onClick={(e) => handleLinkClick(e, 'testimonials')}>Depoimentos</a>
-                    <NavLink to='/roas' onClick={() => setIsOpen(false)}> Calculadora de ROAS</NavLink>
                     <a href="#contact" onClick={(e) => handleLinkClick(e, 'contact')}>Contato</a>
                 </div>
                 <div className='lp-menu-icon' onClick={toggleMenu}>
