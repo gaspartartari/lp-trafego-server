@@ -9,6 +9,7 @@ import client7Image from '../../assets/images/missli2.jpg';
 import client8Image from '../../assets/images/noda.jpg';
 
 
+
 export default function ClientsSection() {
     useEffect(() => {
         if (typeof window !== 'undefined') {
