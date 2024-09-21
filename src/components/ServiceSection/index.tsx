@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './styles.css';
 import { faFacebook, faGoogle, faLinkedin, faPinterest, faTiktok } from '@fortawesome/free-brands-svg-icons';
-import { faHandshake, faLaptopCode, faMagnifyingGlass, faChartLine, faArrowUpRightDots, faSackDollar } from '@fortawesome/free-solid-svg-icons';
+import { faHandshake, faLaptopCode, faMagnifyingGlass, faSackDollar, faCookieBite, faTabletScreenButton } from '@fortawesome/free-solid-svg-icons';
 
 export default function ServicesSection() {
     useEffect(() => {
@@ -41,7 +41,7 @@ export default function ServicesSection() {
                             <FontAwesomeIcon icon={faTiktok} size="2x" className="fa-icon" />
                             <FontAwesomeIcon icon={faLinkedin} size="2x" className="fa-icon" />
                         </div>
-                        <p>Gestão de Mídia Paga</p>
+                        <p>Gestão de Mídia Paga e Orgânica</p>
                     </div>
                     <div className='lp-service-card'>
                         <div className="lp-icons">
@@ -51,7 +51,7 @@ export default function ServicesSection() {
                     </div>
                     <div className='lp-service-card'>
                         <div className="lp-icons">
-                            <FontAwesomeIcon icon={faLaptopCode} size="2x" className="fa-icon" />
+                            <FontAwesomeIcon icon={faCookieBite} size="2x" className="fa-icon" />
                         </div>
                         <p>Configuração de Tags de Rastreamento</p>
                     </div>
@@ -59,25 +59,25 @@ export default function ServicesSection() {
                         <div className="lp-icons">
                         <FontAwesomeIcon icon={faMagnifyingGlass} size="2x" className="fa-icon" />
                         </div>
-                        <p>Análise de Mercado e Concorrência</p>
+                        <p>Otimização para Mecanismos de Busca (SEO)</p>
                     </div>
                     <div className='lp-service-card'>
                         <div className="lp-icons">
-                            <FontAwesomeIcon icon={faChartLine} size="2x" className="fa-icon" />
+                            <FontAwesomeIcon icon={faLaptopCode} size="2x" className="fa-icon" />
                         </div>
-                        <p>Monitoramento e Análise de Desempenho</p>
+                        <p>Construção de E-commerce, Site e Landing page</p>
                     </div>
                     <div className='lp-service-card'>
                         <div className="lp-icons">
-                            <FontAwesomeIcon icon={faArrowUpRightDots} size="2x" className="fa-icon" />
+                            <FontAwesomeIcon icon={faTabletScreenButton} size="2x" className="fa-icon" />
                         </div>
-                        <p>Otimização Contínua</p>
+                        <p>Desenvolvimento de aplicativos web</p>
                     </div>
                     <div className='lp-service-card'>
                         <div className="lp-icons">
                             <FontAwesomeIcon icon={faSackDollar} size="2x" className="fa-icon" />
                         </div>
-                        <p>Análise de ROAS e ROI</p>
+                        <p>Gestão de clientes (CRM) </p>
                     </div>
                 </div>
             </div>

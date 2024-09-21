@@ -19,6 +19,7 @@
     margin-bottom: 30px;
     font-size: 1rem;
     font-weight: 400;
+    padding: 0 30px;
   }
 
   .lp-about-us span {
@@ -30,6 +31,7 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    
   }
   
   .lp-partner-card {
@@ -72,6 +74,7 @@
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 15px;
+    padding: 0;
   }
   
   .lp-partner-card a {

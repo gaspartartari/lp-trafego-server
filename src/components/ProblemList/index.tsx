@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye, faChartLine, faShoppingCart, faBullhorn, faCommentDots, faCogs, faCirclePlay } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faChartLine, faShoppingCart, faBullhorn, faCogs, faCirclePlay, faBatteryQuarter } from '@fortawesome/free-solid-svg-icons';
 import './styles.css';
 
 export default function ProblemsList() {
@@ -8,7 +8,7 @@ export default function ProblemsList() {
     { text: "Dificuldade em gerar vendas", icon: faChartLine, highlight: "gerar vendas" },
     { text: "Escala e otimização de campanhas ", icon: faShoppingCart, highlight: "otimização de campanhas" },
     { text: "Pixel de rastreamento bugado", icon: faBullhorn, highlight: "rastreamento bugado" },
-    { text: "Não tenho feedbacks sobre a conta", icon: faCommentDots, highlight: "feedbacks sobre a conta" },
+    { text: "Site ou e-ecommerece atual limitado", icon: faBatteryQuarter, highlight: "e-ecommerece atual limitado" },
     { text: "Falta sincronia com sua agência atual", icon: faCogs, highlight: "agência atual" },
     { text: "Não sei por onde começar nos anúncios", icon: faCirclePlay, highlight: "começar nos anúncios" },
   ];

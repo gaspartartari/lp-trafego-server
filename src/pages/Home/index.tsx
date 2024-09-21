@@ -16,6 +16,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import VideoPlayer from '../../components/VideoPlayerProps';
 import videoMarketing from '../../assets/videoMarketing.mp4';
+import PillarsSection from '../../components/Pillars';
 
 
 
@@ -57,6 +58,7 @@ export function Home() {
       <section id="schedule">
         <ScheduleMeeting />
       </section>
+      <PillarsSection />
       <section id="about-us">
         <AboutUs />
       </section>

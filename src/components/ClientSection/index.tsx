@@ -43,9 +43,9 @@ export default function ClientsSection() {
                         { img: client1Image, name: 'SINGA', link: 'https://singapurastore.com/', quote: 'Crescimento de 450% YoY gerindo Mídia Paga desde a sua fundação' },
                         { img: client2Image, name: 'SOLEAH', link: 'https://www.soleah.com.br/', quote: 'Correção de bugs no trackeamento. 58% de aumento ROAS no Google Ads nos primeiros 3 meses' },
                         { img: client3Image, name: 'EULÍRICAS', link: 'https://www.euliricas.com.br/', quote: 'Lançamento da marca no mundo dos anúncios online alcançando ROAS sustentável no primeiro mês' },
-                        { img: client4Image, name: 'MC JÓIAS', link: 'https://www.mariliachielejoias.com.br/', quote: 'Lançamento das primeiras campanhas de mídia paga no Google Ads, duplicando faturamento em 3 meses' },
+                        { img: client4Image, name: 'MC JÓIAS', link: 'https://www.mariliachielejoias.com.br/', quote: 'Iniciação da marca nos anúncios online, dobrando o faturamento em 3 meses com ROAS sustentável' },
                         { img: client6Image, name: 'ADAPA BIO', link: 'https://adapabio.com/', quote: 'Consultoria e planejamento para o lançamento da marca no mundo online'  },
-                        { img: client7Image, name: 'MISS LI', link: 'https://missli.com.br/', quote: 'Cálculo de ROAS e ROI. Gestão de mídia paga multicanal ' },
+                        { img: client7Image, name: 'MISS LI', link: 'https://missli.com.br/', quote: 'Consultoria e planejamento em anúncios, resultando em metas claras e bem definidas' },
                         { img: client8Image, name: 'NODA', link: 'https://nodacozinha.com.br/', quote: 'Gestão de CRM e Mídia Paga, incluindo automação de e-mail marketing' },
                     ].map((client, index) => (
                         <div key={index} className='lp-client-card'>
