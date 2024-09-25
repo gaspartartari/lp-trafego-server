@@ -30,7 +30,7 @@ const testimonials: Testimonial[] = [
     },
     {
         id: 3,
-        blockquote: '"A InPulso está conosco desde nossos primórdios, e não é a toa. Profissionais qualificados e dedicados no que fzem."',
+        blockquote: '"A InPulso está conosco desde nossos primórdios, e não é a toa. Profissionais qualificados e dedicados no que fazem."',
         cite: 'Lucas',
         position: 'CEO',
         company: 'Singa'
