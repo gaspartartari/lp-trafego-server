@@ -1,13 +1,9 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 @tailwind components;
 @tailwind utilities;
 
-
-
-
 :root {
-  --bg-primary-color: #5B75BF;
+  --bg-primary-color: #5b75bf;
   --bg-secondary-color: #f9f9f9;
   --bg-tertiary-color: #ffffff;
   --bg-quartiaty-color: #f5f5f5;
@@ -15,23 +11,23 @@
   --text-primary-color: #ffffff;
   --text-secondary-color: #555555;
 
-  --btn-primary-color: #F2733C;
+  --btn-primary-color: #f2733c;
 
-  --border-primary-color:#ddd;
+  --border-primary-color: #ddd;
   --border-form-input-color: #ccc;
 
   --html-body-background: linear-gradient(135deg, #ffffff, #f0f4f8);
   --html-body-background-test: #ffffff;
-  
 }
 
 * {
+  //outline: 1px solid red;
+
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Jost", sans-serif;
   font-kerning: none;
-
 }
 
 a,
@@ -51,7 +47,6 @@ body {
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
-  
 }
 
 .lp-mb20 {
@@ -66,9 +61,6 @@ body {
   display: flex;
 }
 
-
-
-
 /* Animações */
 @keyframes fadeIn {
   0% {
@@ -81,17 +73,20 @@ body {
   }
 }
 
-.lp-services, .lp-clients {
+.lp-services,
+.lp-clients {
   animation: fadeIn 5s ease-in-out;
 }
 
-.lp-service-card, .lp-client-card {
+.lp-service-card,
+.lp-client-card {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.lp-service-card.visible, .lp-client-card.visible {
+.lp-service-card.visible,
+.lp-client-card.visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -108,9 +103,8 @@ html {
   cursor: pointer;
 }
 
-
 /* Buttons */
-.lp-schedule-button{
+.lp-schedule-button {
   display: flex;
   padding: 10px 20px;
   font-size: 16px;
@@ -123,8 +117,6 @@ html {
   transition: background-color 0.3s, transform 0.3s;
   margin: 20px 40px;
   color: var(--text-primary-color);
-
-
 }
 
 .lp-schedule-button:hover {
@@ -138,18 +130,13 @@ html {
 }
 
 @media (min-width: 768px) {
-
   .lp-schedule-button {
     font-size: 20px;
   }
 }
 
 @media (min-width: 1024px) {
-
   .lp-schedule-button {
     font-size: 22px;
   }
 }
-
-
-
