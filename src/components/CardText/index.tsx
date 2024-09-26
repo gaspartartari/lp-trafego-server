@@ -10,7 +10,11 @@ const CardText = () => {
         <p>15 anos ajudando empresas do comércio eletrônico <br /> a crescer por meio de estratégias baseadas em dados.</p>
       </div>
       <div className='lp-main-text-sbtn-container'>
-        <button className='lp-main-text-sbtn'>Agende sua consulta gratuíta</button>
+        <button 
+           onClick={() => {
+            (window as any).dataLayer.push({ 'event': 'schedule_button' });
+        }}
+        className='lp-main-text-sbtn'>Agende sua consulta gratuíta</button>
       </div>
     </section>
   );
