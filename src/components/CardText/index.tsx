@@ -10,11 +10,14 @@ const CardText = () => {
         <p>15 anos ajudando empresas do comércio eletrônico <br /> a crescer por meio de estratégias baseadas em dados.</p>
       </div>
       <div className='lp-main-text-sbtn-container'>
-        <button 
-           onClick={() => {
-            (window as any).dataLayer.push({ 'event': 'schedule_button' });
-        }}
-        className='lp-main-text-sbtn'>Agende sua consulta gratuíta</button>
+        <a href="https://calendly.com/gaspartartari" target="_blank" rel="noopener noreferrer">
+          <button
+            onClick={() => {
+              (window as any).dataLayer.push({ 'event': 'schedule_button' });
+            }}
+            className='lp-main-text-sbtn'>Agende sua consulta gratuíta
+          </button>
+        </a>
       </div>
     </section>
   );
