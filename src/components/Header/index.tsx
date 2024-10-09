@@ -43,7 +43,8 @@ export default function Header() {
                     <a href="#clients" onClick={(e) => handleLinkClick(e, 'clients')}>Cases</a>
                     <a href="#faqs" onClick={(e) => handleLinkClick(e, 'faqs')}>FAQs</a>
                     <a href="#testimonials" onClick={(e) => handleLinkClick(e, 'testimonials')}>Depoimentos</a>
-                    <a href="#contact" onClick={(e) => handleLinkClick(e, 'whatsapp')}>Contato</a>
+                    <a href="https://api.whatsapp.com/send/?phone=5551993415860&text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+InPulso.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" >Contato</a>
+               
                 </div>
                 <div className='lp-menu-icon' onClick={toggleMenu}>
                     {isOpen ? <FaTimes /> : <FaBars />}
