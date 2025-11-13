@@ -10,7 +10,7 @@ export default function ScheduleButton() {
         <div className='lp-schedule-button-container-bg'>
 
             <a
-                href='https://calendly.com/gaspartartari'
+                href='https://wa.me/5511974494221'
                 target='_blank'
                 rel='noopener noreferrer'
                 onClick={() => {
