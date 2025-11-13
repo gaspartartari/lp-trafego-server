@@ -14,7 +14,7 @@ const whatsappText = 'Olá! Gostaria de mais informações sobre a InPulso.';
 
 
 export default function WhatsAppButton ()  {
-    const link = `https://wa.me/5551993415860?text=${encodeURIComponent(whatsappText)}`;
+    const link = `https://wa.me/5511974494221?text=${encodeURIComponent(whatsappText)}`;
     
     return (
        <>
